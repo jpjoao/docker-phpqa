@@ -28,16 +28,16 @@ If you notice any bug or typo, please feel free to create an issue and/or open a
 
 This repository intent to facilitate participation and contribution in the PHP Test Festival. More information about it:
 
-https://github.com/PHPTestFestBrasil/PHPTestFest
+[PHPTestFestBrasil][https://github.com/PHPTestFestBrasil/PHPTestFest]
 
-https://wiki.php.net/qa/testfest
+[PHPTestFestBrasil Github][https://phptestfestbrasil.github.io/]
 
-https://phptestfestbrasil.github.io/
+[QA PHP TestFest][https://wiki.php.net/qa/testfest]
 
 ## Credits
 
 The tests in the examples folder are part of the [PHP interpreter codebase][php-src]. The Dockerfile in this repository
-is inspired and based on the official Dockerfile template present in the [PHP Docker Hub repository|https://hub.docker.com/_/php/].
+is inspired and based on the official Dockerfile template present in the [PHP Docker Hub repository][https://hub.docker.com/_/php/].
 
 ## LICENSE
 
