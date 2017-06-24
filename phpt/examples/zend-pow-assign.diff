@@ -1,2 +1,0 @@
-001+ Warning: assert(): Assertion failed in /usr/src/phpt/examples/zend-pow-assign.php on line 4
-001- Warning: assert(): assert(false && ($a **= 2)) failed in %s%ezend-pow-assign.php on line %d
