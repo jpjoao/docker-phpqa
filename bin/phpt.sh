@@ -9,6 +9,11 @@ fi
 _VERSION=$2
 if [ -z "$_VERSION" ]; then
     _VERSION=71
+elif [ "$_VERSION" = "all" ]; then
+    `git rev-parse --show-toplevel`/bin/phpt.sh $1 71
+    `git rev-parse --show-toplevel`/bin/phpt.sh $1 70
+    `git rev-parse --show-toplevel`/bin/phpt.sh $1 56
+    exit 0;
 fi
 
 docker run --rm -i -t \
