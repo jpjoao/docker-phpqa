@@ -13,11 +13,11 @@ Just clone the repository to start using it.
 2. Run the `./phpqa` command passing as arguments the filename and the PHP version to run the test (71, 70, 56):
 ````bash
 # without a version the test will run agains PHP 7.1 codebase
-./phpqa examples/closure_061.phpt
+./phpqa phpt/examples/closure_061.phpt
 # with a version the test will run against the specified version
-./phpqa examples/closure_061.phpt 56
+./phpqa phpt/examples/closure_061.phpt 56
 # if you want you can pass `all` as second argument and the test will run against all versions
-./phpqa examples/closure_061.phpt all
+./phpqa phpt/examples/closure_061.phpt all
 ````
 
 ![Example execution](http://i.imgur.com/xIXGOeZ.gif)

@@ -18,4 +18,4 @@ fi
 
 docker run --rm -i -t \
     -v `git rev-parse --show-toplevel`/phpt:/usr/src/phpt brunoric/phpqa:${_VERSION} \
-    make test TESTS=/usr/src/phpt/${_PHPT_FILE_PATH}
+    make test TESTS=/usr/src/${_PHPT_FILE_PATH}
