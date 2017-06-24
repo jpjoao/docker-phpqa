@@ -36,10 +36,19 @@ This repository intent to facilitate participation and contribution in the PHP T
 * [Sammy's php|tek 2017 talk](https://speakerdeck.com/sammyk/writing-tests-for-php-source-php-tek-2017)
 * [Discussion at PHP User Groups list](https://groups.google.com/a/phpcommunity.org/forum/?utm_medium=email&utm_source=footer#!topic/testfest/-C2pcxod65g)
 
+# TODO
+
+* Add more PHP versions (PHP 7.2alpha and PHP 5.5 at least);
+* Put some effort to shrink the images, either using the Alpine version of them or any other strategy;
+* Integrate this repository with CircleCi in order to have the docker images builds tested;
+* Improve documentation, adding a session about how to write PHPT.
+
 ## Credits
 
-The tests in the examples folder are part of the [PHP interpreter codebase][php-src]. The Dockerfile in this repository
-is inspired and based on the official Dockerfile template present in the [PHP Docker Hub repository][https://hub.docker.com/_/php/].
+* The tests in the examples folder are part of the [PHP interpreter codebase][php-src].
+* The Dockerfile in this repository is inspired and based on the official Dockerfile template and images present in the
+[PHP Docker Hub repository][php-docker] also available at [the Docker Library Github repository][docker-lib-php]. The
+scripts `docker-php-*` are also from the same [repository][docker-lib-php].
 
 ## LICENSE
 
@@ -48,4 +57,6 @@ Copyright (c) 2017 Bruno Ricardo Siqueira
 This work is licensed under the terms of the [MIT license][license].
 
 [php-src]: https://github.com/php/php-src
+[php-docker]: https://hub.docker.com/_/php/
+[docker-lib-php]: https://github.com/docker-library/php
 [license]: https://github.com/brunoric/docker-phpqa/blob/master/LICENSE
