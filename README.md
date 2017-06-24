@@ -28,11 +28,12 @@ If you notice any bug or typo, please feel free to create an issue and/or open a
 
 This repository intent to facilitate participation and contribution in the PHP Test Festival. More information about it:
 
-[PHPTestFestBrasil][https://github.com/PHPTestFestBrasil/PHPTestFest]
-
-[PHPTestFestBrasil Github][https://phptestfestbrasil.github.io/]
-
-[QA PHP TestFest][https://wiki.php.net/qa/testfest]
+* QA PHP TestFest: https://wiki.php.net/qa/testfest
+* Some blog posts from Stefan Koopmanschap: http://leftontheweb.com/blog/categories/testfest
+* Philip Norton's post on the UK PHP TestFest 2010: http://www.hashbangcode.com/blog/php-testfest-uk-2010-and-testing-php
+* PHPBelgium slides for preparing for TestFest 2009: https://www.slideshare.net/PHPBelgium/preparation-for-php-test-fest-2009
+* PHPTestFestBrasil: https://phptestfestbrasil.github.io
+* Sammy's php|tek 2017 talk: https://speakerdeck.com/sammyk/writing-tests-for-php-source-php-tek-2017
 
 ## Credits
 
