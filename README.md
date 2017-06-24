@@ -20,6 +20,8 @@ Just clone the repository to start using it.
 ./phpqa examples/closure_061.phpt all
 ````
 
+![Example execution](http://i.imgur.com/xIXGOeZ.gif)
+
 ## Contributing
 
 If you notice any bug or typo, please feel free to create an issue and/or open a pull request with the fix.
