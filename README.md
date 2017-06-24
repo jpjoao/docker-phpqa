@@ -24,6 +24,16 @@ Just clone the repository to start using it.
 
 If you notice any bug or typo, please feel free to create an issue and/or open a pull request with the fix.
 
+## PHPTestFest2017
+
+This repository intent to facilitate participation and contribution in the PHP Test Festival. More information about it:
+
+https://github.com/PHPTestFestBrasil/PHPTestFest
+
+https://wiki.php.net/qa/testfest
+
+https://phptestfestbrasil.github.io/
+
 ## Credits
 
 The tests in the examples folder are part of the [PHP interpreter codebase][php-src]. The Dockerfile in this repository
