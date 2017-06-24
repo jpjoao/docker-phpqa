@@ -3,6 +3,9 @@
 _PHPT_FILE_PATH=$1
 if [ -z "$_PHPT_FILE_PATH" ]; then
     echo "You need to provide a phpt file to be tests."
+    echo "usage:"
+    echo "./phpqa path/to/test.phpt <version>"
+    echo "available versions: 56, 70, 71 and all (run all available versions)"
     exit 1;
 fi
 
