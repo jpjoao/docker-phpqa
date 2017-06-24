@@ -45,10 +45,10 @@ This repository intent to facilitate participation and contribution in the PHP T
 
 ## Credits
 
-* The tests in the examples folder are part of the [PHP interpreter codebase][php-src].
+* The tests in the examples folder are part of the [PHP interpreter codebase][php-src] distributed under [PHP License 3.01][php-license].
 * The Dockerfile in this repository is inspired and based on the official Dockerfile template and images present in the
-[PHP Docker Hub repository][php-docker] also available at [the Docker Library Github repository][docker-lib-php]. The
-scripts `docker-php-*` are also from the same [repository][docker-lib-php].
+[PHP Docker Hub repository][php-docker] also available at the [Docker Library Github repository][docker-lib-php]. The
+scripts `docker-php-*` are also from the same [repository][docker-lib-php]. These source code is distributed under [MIT license][https://github.com/docker-library/php/blob/master/LICENSE].
 
 ## LICENSE
 
@@ -58,5 +58,6 @@ This work is licensed under the terms of the [MIT license][license].
 
 [php-src]: https://github.com/php/php-src
 [php-docker]: https://hub.docker.com/_/php/
+[php-license]: https://github.com/php/php-src/blob/master/LICENSE
 [docker-lib-php]: https://github.com/docker-library/php
 [license]: https://github.com/brunoric/docker-phpqa/blob/master/LICENSE
