@@ -62,7 +62,7 @@ scripts `docker-php-*` are also from the same [repository][docker-lib-php]. Thes
 
 ## LICENSE
 
-Copyright (c) 2017 Bruno Ricardo Siqueira
+Copyright (c) 2017 herdPHP
 
 This work is licensed under the terms of the [MIT license][license].
 
@@ -71,4 +71,4 @@ This work is licensed under the terms of the [MIT license][license].
 [php-license]: https://github.com/php/php-src/blob/master/LICENSE
 [docker-lib-php]: https://github.com/docker-library/php
 [docker-lib-php-license]: https://github.com/docker-library/php/blob/master/LICENSE
-[license]: https://github.com/brunoric/docker-phpqa/blob/master/LICENSE
+[license]: https://github.com/herdphp/docker-phpqa/blob/master/LICENSE
