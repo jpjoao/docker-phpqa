@@ -56,5 +56,5 @@ docker build \
     --build-arg BUILD_PHP_MD5="${!_PHP_MD5}" \
     --build-arg BUILD_CHECK_SIGNATURE="${!_CHECK_SIGNATURE}" \
     --build-arg BUILD_CUSTOM_URL="${!_CUSTOM_URL}" \
-    -t brunoric/phpqa:${_VERSION} src/
+    -t herdphp/phpqa:${_VERSION} src/
 cd -
