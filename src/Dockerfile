@@ -4,6 +4,8 @@ ARG BUILD_PHP_VERSION="7.1.6"
 ARG BUILD_GPG_KEYS="A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E"
 ARG BUILD_PHP_SHA256="01584dc521ab7ec84b502b61952f573652fe6aa00c18d6d844fb9209f14b245b"
 ARG BUILD_PHP_MD5="eafc7a79cc8cc62c9292c96f9c9ccf90"
+ARG BUILD_CHECK_SIGNATURE=true
+ARG BUILD_CUSTOM_URL=''
 
 ENV PHPIZE_DEPS \
 		autoconf \
@@ -24,6 +26,8 @@ ENV GPG_KEYS="$BUILD_GPG_KEYS"
 ENV PHP_VERSION="$BUILD_PHP_VERSION"
 ENV PHP_URL="https://secure.php.net/get/php-$PHP_VERSION.tar.xz/from/this/mirror" PHP_ASC_URL="https://secure.php.net/get/php-$PHP_VERSION.tar.xz.asc/from/this/mirror"
 ENV PHP_SHA256="$BUILD_PHP_SHA256" PHP_MD5="$BUILD_PHP_MD5"
+ENV CHECK_SIGNATURE="$BUILD_CHECK_SIGNATURE"
+ENV CUSTOM_URL="$BUILD_CUSTOM_URL"
 
 RUN apt-get update && apt-get install -y \
 		$PHPIZE_DEPS \
@@ -45,14 +49,18 @@ RUN set -xe; \
 	rm -rf /var/lib/apt/lists/*; \
 	mkdir -p /usr/src; \
 	cd /usr/src; \
-	wget -O php.tar.xz "$PHP_URL"; \
-	if [ -n "$PHP_SHA256" ]; then \
+	if [ -n "$CUSTOM_URL" ]; then \
+	    wget -O php.tar.xz "$CUSTOM_URL"; \
+	else \
+	    wget -O php.tar.xz "$PHP_URL"; \
+	fi; \
+	if [ -n "$PHP_SHA256" && "$CHECK_SIGNATURE" = true ]; then \
 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; \
 	fi; \
-	if [ -n "$PHP_MD5" ]; then \
+	if [ -n "$PHP_MD5" && "$CHECK_SIGNATURE" = true ]; then \
 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; \
 	fi; \
-	if [ -n "$PHP_ASC_URL" ]; then \
+	if [ -n "$PHP_ASC_URL" && "$CHECK_SIGNATURE" = true ]; then \
 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; \
 		export GNUPGHOME="$(mktemp -d)"; \
 		for key in $GPG_KEYS; do \
@@ -63,7 +71,7 @@ RUN set -xe; \
 	fi; \
 	apt-get purge -y --auto-remove $fetchDeps
 
-COPY scripts/docker-php-source /usr/local/bin/
+COPY scripts/docker-php-* /usr/local/bin/
 
 RUN set -xe \
 	&& buildDeps=" \
@@ -103,8 +111,6 @@ RUN set -xe \
 	&& cd / \
 	&& pecl update-channels \
 	&& rm -rf /tmp/pear ~/.pearrc
-
-COPY scripts/docker-php-ext-* /usr/local/bin/
 
 WORKDIR /usr/src/php/
 CMD ["/bin/bash"]
