@@ -22,5 +22,5 @@ elif [ "$_VERSION" = "all" ]; then
 fi
 
 docker run --rm -i -t \
-    -v `git rev-parse --show-toplevel`/phpt:/usr/src/phpt brunoric/phpqa:${_VERSION} \
+    -v `git rev-parse --show-toplevel`/phpt:/usr/src/phpt herdphp/phpqa:${_VERSION} \
     make test TESTS=/usr/src/${_PHPT_FILE_PATH}
