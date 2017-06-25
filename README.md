@@ -68,7 +68,7 @@ scripts `docker-php-*` are also from the same [repository][docker-lib-php]. Thes
 
 ## LICENSE
 
-Copyright (c) 2017 Bruno Ricardo Siqueira
+Copyright (c) 2017 Bruno Ricardo Siqueira, Joao Paulo Vendramini Martins 
 
 This work is licensed under the terms of the [MIT license][license].
 
