@@ -10,7 +10,7 @@ All you need to start using it is cloning the repository and have [docker](https
 ## How to use it?
 
 1. Write a PHPT test and add it to the `phpt` folder;
-2. Run the `./phpqa` command passing as arguments the filename and the PHP version to run the test (71, 70, 56):
+2. Run the `./phpqa` command passing as arguments the filename and the PHP version to run the test (71, 70, 56, 55):
 ````bash
 # without a version the test will run agains PHP 7.1 codebase
 ./phpqa phpt/examples/closure_061.phpt
@@ -28,6 +28,12 @@ Note that when running the test suit there will be an output message reminding y
 Build complete.
 Don't forget to run 'make test'.
 ````
+
+## PHP versions available
+
+* PHP 5.5, 5.6, 7.0 and 7.1 are fully available and supported;
+* PHP 7.2 is about to work but since 7.2.0alpha2 is unable to be built we are still waiting [the related PEAR bug](https://bugs.php.net/bug.php?id=74723)
+to be fixed.
 
 ## Contributing
 
@@ -48,7 +54,7 @@ This repository intent to facilitate participation and contribution in the PHP T
 
 # TODO
 
-* Add more PHP versions (PHP 7.2alpha and PHP 5.5 at least);
+~~* Add more PHP versions (PHP 7.2alpha and PHP 5.5 at least);~~
 * Put some effort to shrink the images, either using the Alpine version of them or any other strategy;
 * Integrate this repository with CircleCi in order to have the docker images builds tested;
 * Improve documentation, adding a session about how to write PHPT.
