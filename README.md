@@ -54,10 +54,10 @@ This repository intent to facilitate participation and contribution in the PHP T
 
 # TODO
 
-~~* Add more PHP versions (PHP 7.2alpha and PHP 5.5 at least);~~
-* Put some effort to shrink the images, either using the Alpine version of them or any other strategy;
-* Integrate this repository with CircleCi in order to have the docker images builds tested;
-* Improve documentation, adding a session about how to write PHPT.
+* ~~Add more PHP versions (PHP 7.2alpha and PHP 5.5 at least) [Issue #5](https://github.com/herdphp/docker-phpqa/issues/5);~~
+* Put some effort to shrink the images, either using the Alpine version of them or any other strategy [Issue #6](https://github.com/herdphp/docker-phpqa/issues/6);
+* Integrate this repository with CircleCi in order to have the docker images builds tested [Issue #7](https://github.com/herdphp/docker-phpqa/issues/7);
+* Improve documentation, adding a session about how to write PHPT [Issue #8](https://github.com/herdphp/docker-phpqa/issues/8);
 
 ## Credits
 
@@ -68,7 +68,7 @@ scripts `docker-php-*` are also from the same [repository][docker-lib-php]. Thes
 
 ## LICENSE
 
-Copyright (c) 2017 Bruno Ricardo Siqueira
+Copyright (c) 2017 Bruno Ricardo Siqueira, Joao Paulo Vendramini Martins 
 
 This work is licensed under the terms of the [MIT license][license].
 
@@ -77,4 +77,4 @@ This work is licensed under the terms of the [MIT license][license].
 [php-license]: https://github.com/php/php-src/blob/master/LICENSE
 [docker-lib-php]: https://github.com/docker-library/php
 [docker-lib-php-license]: https://github.com/docker-library/php/blob/master/LICENSE
-[license]: https://github.com/brunoric/docker-phpqa/blob/master/LICENSE
+[license]: https://github.com/herdphp/docker-phpqa/blob/master/LICENSE
