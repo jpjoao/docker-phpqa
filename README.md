@@ -23,7 +23,7 @@ All you need to start using it is cloning the repository and have [docker](https
 ![Example execution](http://i.imgur.com/xIXGOeZ.gif)
 
 
-Note that when running the test suit there will be an output message reminding you to run `make test`. THis is a standard message and you don't need to run it.
+Note that when running the test suit there will be an output message reminding you to run `make test`. This is a standard message and you don't need to run it.
 ````bash
 Build complete.
 Don't forget to run 'make test'.
